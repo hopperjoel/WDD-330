@@ -1,0 +1,48 @@
+Week 2 - JS Novice to Ninja Ch. 2
+
+Blocks - QUESTION Any purpose or function besides defining or grouping variables/constants within a specific section?
+
+Number - I've always found it interesting that numbers aren't separated into integers and floating point
+
+Var - Another text I was reading said it was fine to use appropriately
+
+variable names - Remember that $ is used by JQuery. CASE SENSITIVE
+    QUESTION - Is there any effect with PHP using variables like this? I wouldn't think so, but...
+
+Escape characters - \' \" \n \r \t(tab)
+
+Wrapper Objects - Interesting to know. Primitives don't have properties and methods, so Wrapper
+
+Data type methods - can access with variable['method'] or .method
+
+String literals - `` with `Hello ${ variable }`;
+
+Exponents - 1e6 1 million   2E3 is 2 * 10^3  operator is ** for exponentiation
+
+Compound Assignment Operator - points +=10 = (points = points + 10)
+    - ++ operator for incrementing
+        - let points = 5; points++ will return 5 then increase to 6
+            ++points will return 6 then return it
+
+TYPE COERCION!!!
+    - adding strings and numbers will try and convert to strings
+        - '8' + 2 = '82'
+
+False values:
+            * "" // double quoted empty string literal
+            * '' // single quoted empty string literal
+            * `` // empty template literal
+            * 0
+            * -0 // considered different to 0 by JavaScript!
+            * NaN
+            * false
+            * null
+            * undefined
+
+Negative Logical Operator - ! eg !true == false
+
+Logical and - &&
+Logical or - ||
+
+Equality Operators - Remember == is soft and === is hard (same value and type)
+
