@@ -1,22 +1,26 @@
-const links = {
-    week2: {
-        label: "Week2 notes",
-        url: "studynotes.html"
-    },
-    week3: {}
+
+function makeAsgList() {
+    const links = [
+        {
+            label: "Week2 notes",
+            url: "studynotes.html"
+        },
+        {
+            label: "Week2 Team Assignment",
+            url: "/week_2/week2/team1w2.html"
+        }
+    ];
+    const asgUl = document.getElementById('asg-list');
+
+    for (i = 0; i < links.length; ++i) {
+        let labelItem = document.createElement('li');
+        labelItem.textContent = links[i].label;
+        let urlItem = document.createElement('a');
+        urlItem.setAttribute('src', links[i].url);
+        labelItem.appendChild(urlItem);
+        document.getElementById('asg-list').appendChild(labelItem);
+    }
 };
 
-function assignmentUpdate(links) {
-    const assignmentUl = document.getElementById("assignment-list");
-    for (let i = 0; i < links.length; i ++) {
-        
-        let listAssignment = assignmentUl.innerHTML(`<li>${links[i].label}`)
-    } 
-}
+makeAsgList();
 
-function testAssignments(links) {
-    const 
-    for (const key of Object.keys(links)) {
-        console.log(`${key} => ${links[key]}`);
-    }
-}
