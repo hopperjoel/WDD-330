@@ -93,9 +93,16 @@ solution_03();
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live?
 function solution_04() {
-  inventors.forEach((e) => (e.age = e.passed - e.year));
-  console.log("Solution 04");
-  inventors.forEach((e) => console.log(e.last + " " + e.age));
+  let yearsLived = []
+  inventors.forEach(inventor => {
+    years = inventor.passed - inventor.year;
+    yearsLived.push(years);
+  })
+  console.log("Solution 04")
+  console.log(`Total Years lived: ${yearsLived.reduce((accumulator, currentValue) => accumulator + currentValue)}`);
+  // inventors.forEach((e) => (e.age = e.passed - e.year));
+  // console.log("Solution 04");
+  // inventors.forEach((e) => console.log(e.last + " " + e.age));
 }
 solution_04();
 
@@ -222,3 +229,19 @@ const comments = [
 // Find the comment with this ID
 // delete the comment with the ID of 823423
 */
+
+// console.log("Test functions");
+// const yearsLived = [];
+// const test4 = function() {
+//   inventors.forEach(inventor => {
+//     for (let key in inventor) {
+//       console.log(`${key}: ${inventor[key]}`);
+//     };
+//   });
+//   inventors.forEach(inventor => {
+//     const yearsLived = inventor.passed - inventor.year;
+//     console.log(yearsLived);
+//   })
+// };
+
+// test4();
