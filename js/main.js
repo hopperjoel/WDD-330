@@ -15,7 +15,7 @@ function makeAsgList() {
         },
         {
             label: "Week03 Team Assignment",
-            url: "week3/teamAssignmentW03.js"
+            url: "week3/teamAssignment_W3.html"
         }
     ];
     const asgUl = document.getElementById('asg-list');
