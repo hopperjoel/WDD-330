@@ -10,7 +10,12 @@ function makeAsgList() {
             url: "week_2\\week2\\team1w2.html"
         },
         {
-            label: "Week03 "
+            label: "Week03 Quiz Ninja",
+            url: "week3/"
+        },
+        {
+            label: "Week03 Team Assignment",
+            url: "week3/teamAssignmentW03.js"
         }
     ];
     const asgUl = document.getElementById('asg-list');
