@@ -8,19 +8,25 @@ function makeAsgList() {
         {
             label: "Week2 Team Assignment",
             url: "week_2\\week2\\team1w2.html"
+        },
+        {
+            label: "Week03 "
         }
     ];
     const asgUl = document.getElementById('asg-list');
 
     for (i = 0; i < links.length; ++i) {
-        let labelItem = document.createElement('li');
-        labelItem.textContent = links[i].label;
-        let urlItem = document.createElement('a');
-        urlItem.setAttribute('src', links[i].url);
+        labelItem = document.createElement('li');
+        urlItem = document.createElement('a');
+        urlItem.textContent = links[i].label;
+        urlItem.setAttribute('href', `${links[i].url}`);
         labelItem.appendChild(urlItem);
         document.getElementById('asg-list').appendChild(labelItem);
     }
 };
 
-makeAsgList();
+document.getElementById("asgButton").addEventListener("click", makeAsgList);
 
+// for(const item of links){
+//     console.log(item);
+// }

@@ -46,3 +46,62 @@ Logical or - ||
 
 Equality Operators - Remember == is soft and === is hard (same value and type)
 
+-----------------Week 3--------------------
+
+
+when using delete myArray[3], it will leave an 'undefined' space
+
+destructuring arrays:
+
+    const [x, y] = [1,2]; - x = 1 and y = 2
+
+.length:
+    length of arrays
+    array[array.length -1] to find the last item (can't use array[-1] like Python?)
+    mutable - array.length = 8 will create index of 8. Will delete or add undefined
+
+Multidimensional arrays
+
+    coordinates [0][0] - first value of first array
+    coordinates [1][0] - first value of the second array
+
+    SPREAD operator will flatten Multidimensional arrays into a single array
+
+SETS 
+    const newSet = new Set()
+    sets won't add duplicate values, unless they are duplicates within their own array
+    .add(value) will add
+    no index in sets
+    no type COERCION
+    .has(value) method to check if in set
+    .delete(value) to delete, .clear() to delete all values
+    turn it into array by myArray = [...mySet]
+
+MAPS
+    const lsdfj = new Map()
+    like python dictionaries
+    different than objects because any data type can be used for key values
+    .set(key, value) to add items (.set().set() for multiple)
+    use .get(key) to get values
+    .has(value) to check for existence in Map
+    .size will return number of values
+    .keys() will show all keys in a map
+
+Ternary Operator
+
+    shorthand for if else statement
+    condition ? (code to run if condition is true): (code to run if condition is false)
+    n%2 === 0 ? console.log("It's even") : console.log("it's odd")
+
+SWITCH Operator
+    switch (number) {
+        case 4:
+        console.log('You rolled a 4');
+        break;
+        case 5:
+        console.log('5');
+        break;
+        default:
+        console.log('You rolled less than 4');
+        break;
+    }
