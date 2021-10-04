@@ -11,7 +11,7 @@ function makeAsgList() {
         },
         {
             label: "Week03 Quiz Ninja",
-            url: "week3/"
+            url: "week3/js/w03-quiz-ninja.js"
         },
         {
             label: "Week03 Team Assignment",
