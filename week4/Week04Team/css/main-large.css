@@ -1,0 +1,12 @@
+table {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 90px;
+}
+main {
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

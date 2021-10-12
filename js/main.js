@@ -16,7 +16,16 @@ function makeAsgList() {
         {
             label: "Week03 Team Assignment",
             url: "week3/teamAssignment_W3.html"
+        },
+        {
+            label: "Week04 Team Assignment",
+            url: "week4/Week04Team/index.html"
+        },
+        {
+            label: "Week04 Quiz Ninja",
+            url: "week4/W04-QuizNinja/heroes.html"
         }
+        
     ];
     const asgUl = document.getElementById('asg-list');
 
