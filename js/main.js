@@ -24,8 +24,15 @@ function makeAsgList() {
         {
             label: "Week04 Quiz Ninja",
             url: "week4/W04-QuizNinja/heroes.html"
+        },
+        {
+            label: "Week05 Eloquent JavaScript Exercises",
+            url: "week5/exercises/main.js"
+        },
+        {
+            label: "Week05 Team Assignment",
+            url: "week5/team_exercise/index.html"
         }
-        
     ];
     const asgUl = document.getElementById('asg-list');
 
