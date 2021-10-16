@@ -19,14 +19,15 @@ function primitiveMultiply(a, b) {
 
 function testMultiply (a, b) {
     'use strict';
-    try {
-        answer = primitiveMultiply(a, b);
-    } catch(error) {
-        answer = primitiveMultiply(a, b);
-    } finally {
+    for (;;) {
+      try {
         return primitiveMultiply(a, b);
+      } catch (error) {
+        if (!(error instanceof MultiplicatorUnitFailure))
+        throw error;
+      }
+      }
     }
-}
 
 /* The Locked Box
 It is a box with a lock. There is an array in the box, but you can get at it only
@@ -38,20 +39,39 @@ is locked again before returning, regardless of whether the argument function
 returned normally or threw an exception. */
 
 const box = {
-    locked: true,
-    unlock() { this.locked = false; },
-    lock() { this.locked = true; },
-    _content: [],
-    get content() {
+  locked: true,
+  unlock() { this.locked = false; },
+  lock() { this.locked = true;  },
+  _content: [],
+  get content() {
     if (this.locked) throw new Error("Locked!");
     return this._content;
-    }
-    };
+  }
+};
 
-const boxA = box
+function withBoxUnlocked(body) {
+  let locked = box.locked;
+  if (!locked) {
+    return body();
+  }
 
-boxA.locked = false;
-
-function withBoxUnlocked(funcArg) {
-    
+  box.unlock();
+  try {
+    return body();
+  } finally {
+    box.lock();
+  }
 }
+
+withBoxUnlocked(function() {
+  box.content.push("gold piece");
+});
+
+try {
+  withBoxUnlocked(function() {
+    throw new Error("Pirates on the horizon! Abort!");
+  });
+} catch (e) {
+  console.log("Error raised: " + e);
+}
+console.log(box.locked);
