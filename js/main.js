@@ -32,11 +32,11 @@ function makeAsgList() {
         {
             label: "Week05 Team Assignment",
             url: "week5/team_exercise/index.html"
-        }
+        },
         {
             label: "Midterm ToDo Project",
             url: "ToDo/todo.html"
-        }
+        },
     ];
     const asgUl = document.getElementById('asg-list');
 
