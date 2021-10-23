@@ -36,7 +36,7 @@ function makeAsgList() {
         {
             label: "Midterm ToDo Project",
             url: "ToDo/todo.html"
-        },
+        }
     ];
     const asgUl = document.getElementById('asg-list');
 
