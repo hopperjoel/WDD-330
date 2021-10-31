@@ -34,6 +34,18 @@ function makeAsgList() {
             url: "week5/team_exercise/index.html"
         },
         {
+            label: "Week06 ToDo App",
+            url: "todo/test.js"
+        },
+        {
+            label: "Week07 Quiz Ninja",
+            url: "week7/quizNinja/main.js"
+        },
+        {
+            label: "Week07 Team Assignment",
+            url: "week7/week7Team/team1w7.html"
+        },
+        {
             label: "Midterm ToDo Project",
             url: "ToDo/todo.html"
         }
