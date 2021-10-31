@@ -33,6 +33,18 @@ function makeAsgList() {
             label: "Week05 Team Assignment",
             url: "week5/team_exercise/index.html"
         },
+        {
+            label: "Week06 ToDo App",
+            url: "todo/test.js"
+        },
+        {
+            label: "Week07 Quiz Ninja",
+            url: "week7/quizNinja/main.js"
+        },
+        {
+            label: "Week07 Team Assignment",
+            url: "week7/week7Team/team1w7.html"
+        },
     ];
     const asgUl = document.getElementById('asg-list');
 
@@ -45,6 +57,7 @@ function makeAsgList() {
         document.getElementById('asg-list').appendChild(labelItem);
     }
 };
+
 
 document.getElementById("asgButton").addEventListener("click", makeAsgList);
 
