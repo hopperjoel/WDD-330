@@ -45,6 +45,10 @@ function makeAsgList() {
             label: "Week07 Team Assignment",
             url: "week7/week7Team/team1w7.html"
         },
+        {
+            label: "Midterm ToDo Project",
+            url: "ToDo/todo.html"
+        }
     ];
     const asgUl = document.getElementById('asg-list');
 
