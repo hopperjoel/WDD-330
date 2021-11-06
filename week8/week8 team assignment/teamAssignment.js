@@ -16,6 +16,15 @@ function fetchData(dataLink) {
     );
 }
 
+// function fetchPerson(Url) {
+//   fetch(Url)
+//     .then((list) => list.json())
+//     .then((data) => {
+//       container.innerHTML = "";
+//       console.log(data);
+//     })
+// }
+
 //grabs names from object and returns string of names
 function displayData(obj) {
   console.log(obj);
@@ -23,8 +32,10 @@ function displayData(obj) {
   let objSize = obj.results.length;
 
   for (let i = 0; i < objSize; i++) {
+    // let personUrl = obj.results[i].url;
+    // let personLink = fetchPerson(personUrl);
     people.push(
-      "<a class='personInfo()'>" + JSON.stringify(obj.results[i].name) + "</a>"
+      `<a href="" class='personInfo()'>${JSON.stringify(obj.results[i].name)}</a>`
     );
   }
 
