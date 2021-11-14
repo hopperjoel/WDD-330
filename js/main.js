@@ -48,7 +48,23 @@ function makeAsgList() {
         {
             label: "Midterm ToDo Project",
             url: "ToDo/todo.html"
-        }
+        },
+        {
+            label: "Week08 Notes",
+            url: "week8/Week 8 Notes.txt"
+        },
+        {
+            label: "Week08 Team Assignment",
+            url: "week8/week8 team assignment/teamAssignment.html"
+        },
+        {
+            label: "Week09 Quiz Ninja",
+            url: "week9/quizNinja/index.html"
+        },
+        {
+            label: "Week09 Team Assignment",
+            url: "week9/week9 Team Assignment/index-START.html"
+        },
     ];
     const asgUl = document.getElementById('asg-list');
 

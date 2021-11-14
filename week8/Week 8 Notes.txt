@@ -1,0 +1,63 @@
+TRANSFORMS
+
+translate - moves on the x/y axis
+    - translate(px, px);
+    - translateX(px, px);
+    - doesn't work on inline elements
+
+scale - factors size
+    - scale(1, 1); - would be same size, .5 would be half
+
+rotation - rotates by degrees
+    - rotate(10deg)
+    - positive degrees moves clockwise
+    - rotates from center origin
+
+skew - skews according to axis
+    - will only skew on x for one value
+
+transform-origin - changes origin for other transformations
+    - order with other transforms matters
+    - transform-origin(px)
+
+
+TRANSITIONS
+
+1. Declare the original state of the element in the default style declaration.
+2. Declare the final state of your transitioned element; for example, a :hover state.
+3. Include the transition functions in your default style declaration using the
+transition properties, including: transition-property, transition-duration,
+transition-timing-function, and transition-delay. We’ll look at each of
+these and how they work shortly.
+
+transition-property
+    - transition-property: transform, color; Or ALL to transition all properties
+
+transition-duration
+    - transition-duration: 0.2s;
+
+transition-timing
+    - ease, linear, ease-in, ease-out, ease-in-out
+    - ease is slow-fast-slow, linear is constant speed
+
+transition-delay
+    - delays start of transition
+    - 50ms delay is fairly standard
+    - negative delay will start part-way through the transition
+
+transition short-hand
+    - transition: transform 0.2s ease-out 50ms;
+
+ANIMATIONS
+
+1. Create a named animation
+2. Attach it to element's property declaration block
+
+ - @keyframes myAnimation {
+     from {
+         transform: translateX(-50);
+     }
+     to {
+         transform: translateX(50%);
+     }
+ }
