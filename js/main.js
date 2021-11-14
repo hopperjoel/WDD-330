@@ -63,7 +63,7 @@ function makeAsgList() {
         },
         {
             label: "Week09 Team Assignment",
-            url: "week9/week9 Team Assignment/index-START.html"
+            url: "week9/Week9 Team Assignment/index-START.html"
         },
     ];
     const asgUl = document.getElementById('asg-list');
