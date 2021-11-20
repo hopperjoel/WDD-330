@@ -67,7 +67,7 @@ function makeAsgList() {
         },
         {
             label: "Week10 EarthQuake",
-            url: "10/earthquake watch/index.html"
+            url: "week10/earthquake watch/index.html"
         },
         {
             label: "Week10 Team Assignment",
