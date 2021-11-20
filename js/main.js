@@ -71,7 +71,7 @@ function makeAsgList() {
         },
         {
             label: "Week10 Team Assignment",
-            url: "week10/teamActivityW10/index.html"
+            url: "week10/teamActivityW10/"
         },
     ];
     const asgUl = document.getElementById('asg-list');
