@@ -17,18 +17,7 @@ export function getJSON(url) {
     });
   };
 
-export const getLocationTest = function() {
-    if (navigator.geolocation) {
-        let position = navigator.geolocation.getCurrentPosition((position) => {
-            let latitude = position.coords.latitude;
-            let longitude = position.coords.longitude;
-            let string = `&latitude=${latitude}&longitude=${longitude}&maxradiuskm=100`;
-            return string;
-        })
-    } else {
-        console.log("Geolocation not supported");
-    }
-}
+
 
 
 
