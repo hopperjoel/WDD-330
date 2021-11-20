@@ -65,6 +65,14 @@ function makeAsgList() {
             label: "Week09 Team Assignment",
             url: "week9/Week9 Team Assignment/index.html"
         },
+        {
+            label: "Week10 EarthQuake",
+            url: "10/earthquake watch/index.html"
+        },
+        {
+            label: "Week10 Team Assignment",
+            url: "week10/teamActivityW10/index.html"
+        },
     ];
     const asgUl = document.getElementById('asg-list');
 
