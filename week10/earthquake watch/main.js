@@ -12,26 +12,21 @@ let quakes = [];
 async function getPosition(position, radius) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
-    let string = `&latitude=${latitude}&longitude=${longitude}&maxradiuskm=${radius}`;
+    let string = `&latitude=${latitude}&longitude=${longitude}&maxradiuskm=100`;
     return string;
 };
 
 // this function works...but is doing way too much. Large functions like this tend to be brittle and hard to maintain and test
 // a function should do one thing and do it well. Not everything!
-async function everything(locationString, baseURL) {
+async function retrieveQuakeInfo(locationString, baseURL) {
     // get location
-    let locResp = await getLocation();
-    // take a look at where the information we need is in the returned object
-    console.log(locResp);
-    // we really only need the coords portion
-    const location = locResp.coords;
-    // build out the url with the location
-    const radius = 100;
     const query = baseURL + locationString;
-     
     console.log(query);
     // fetch the data
     quakes = await getJSON(query);
+    return quakes;
+
+async function extractQuakeList(quakes) {
     // get the element we will render the list in
     const listElement = document.querySelector("#quakeList");
     // render the list of quakes
@@ -40,6 +35,11 @@ async function everything(locationString, baseURL) {
         console.log(quake);
       return `${quake.properties.title}${new Date(quake.properties.time)}`;
     });
+    console.log(listHtml);
+    return listHtml;
+  }
+
+async function renderQuakeList(listHtml) {
 
     listElement.innerHTML = listHtml.join("");
     // attach a listener to watch for a click on the quake. If it sees one then render out the details of the quake
@@ -66,5 +66,17 @@ async function everything(locationString, baseURL) {
         .join("");
     });
   }
-  everything(locationString, baseURL);
+}
 
+const quakeInfo = retrieveQuakeInfo(locationString, baseURL);
+
+const quakeData = () => {
+  quakeInfo.then((a) => {
+    console.log(a);
+    return a;
+  });
+};
+
+let quakeResolve = quakeData();
+
+extractQuakeList(quakeResolve);
