@@ -73,6 +73,10 @@ function makeAsgList() {
             label: "Week10 Team Assignment",
             url: "week10/teamActivityW10/"
         },
+        {
+            label: "Week11 JSON-Server",
+            url: "week11/client/client/index.html"
+        },
     ];
     const asgUl = document.getElementById('asg-list');
 
