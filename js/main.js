@@ -75,7 +75,7 @@ function makeAsgList() {
         },
         {
             label: "Week11 JSON-Server",
-            url: "week11/client/client/index.html"
+            url: "week11/client/index.html"
         },
     ];
     const asgUl = document.getElementById('asg-list');
