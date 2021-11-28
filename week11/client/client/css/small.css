@@ -1,0 +1,57 @@
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+span {
+    color: #b5179e;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f72585;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #7209b7;
+    font-size: 1.9em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #4361ee;
+}
+h4 {
+    font-size: 1.1em;
+    color: #480ca8;
+
+}
+
+#inputImg {
+    width: 70px;
+    height: 40px;
+}#hero2 label, #hero3 label{
+    display: block;
+    margin: 10px;
+}
+
+input:invalid {
+    border: 2px dashed red;
+  }
+
+  input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }
+
+  .hidden {
+      display: none;
+  }
