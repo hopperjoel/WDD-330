@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/homepage-small.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./css/homepage-large.css" media="only screen and (min-width: 1025px)">
+    <title>Homepage | TMC - Macro and Calorie Tracking App</title>
+    
+</head>
+<body>
+    
+    <main>
+        <h1>TMC Nutrition Tracker</h1>
+        <div class="addItem">
+            <div id="toggleButton" class="toggleDiv">
+                <p id="arrowButton">&#10095;</p>
+                <button id="searchFoodButton" class="toggleButtons">Search Food Item</button>
+            </div>
+            <form method="post" action="" id="searchItemForm" class="hide addItemForm">
+                <label for="foodItem" class="side">Food item:</label>
+                <input type="text" id="foodItem" class="input side">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="itemQuantity" class="side" min="1" max="10">
+                <input type="submit" id="submitInfo" value="Get Info">
+            </form>
+        </div>
+        <div id="nutriFormDiv">
+            <div id="toggleButton2" class="toggleDiv">
+                <p id="arrowButton2">&#10095;</p>
+                <button id="addFoodButton" class="toggleButtons">Manually Add Food</button>
+            </div>
+            <form id="foodForm" class="foodForm hide" action="index.html">
+                <label for="foodName" class="top">Food Item</label>
+                <input type="text" id="foodName" class="top input">
+                <label for="quantity" class="top">Quantity</label>
+                <input type="number" id="quantity" class="top input">
+                <label for="calories" class="top">Calories</label>
+                <input type="number" id="calories" class="top input">
+                <label for="totalCarbs" class="top">Total Carbs</label>
+                <input type="number" id="totalCarbs" class="top input">
+                <label for="fiber" class="top">Fiber</label>
+                <input type="number" id="fiber" class="top input">
+                <label for="protein" class="top">Protein</label>
+                <input type="number" id="protein" class="top input">
+                <label for="totalFat" class="top">Total Fat</label>
+                <input type="number" id="totalFat" class="top input">
+                <input type="submit" id="submit" value="Add Food">
+            </form>
+        </div>
+        <div id="dailyTotals">
+
+        </div>
+        <div id="dailyFoods">
+            <h3 class="header hide">Daily Foods</h3>
+        </div>
+        <div id="notificationsDiv">
+            <ul id="notifications">
+                
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>TMC - Tracking Macros and Calories App | Joel Hopper BYU-I 2021</p>
+            <p>Nutritional Information Provided by Edamam API <a href="https://www.edamam.com/"></a></p>
+        </div>
+    </footer>
+    
+    <script src="./js/main.js" type="module" ></script>
+    <script src="./js/testdatabase.js"></script>
+</body>
+</html>

@@ -81,6 +81,11 @@ const links = [
         label: "Final Project - Macro Tracking App",
         url: "Final Project/index.html"
     },
+    {
+        label: "Final Project in Modules",
+        url: "final-project-original/index.html"
+    },
+
 ];
 function makeAsgList() {
     asgUl.innerHTML = '';

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/homepage-small.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/css/homepage-large.css" media="only screen and (min-width: 1025px)">
+    <title>Homepage | TMC - Macro and Calorie Tracking App</title>
+    
+</head>
+<body>
+    
+    <main>
+        <h1>TMC Nutrition Tracker</h1>
+        <div id="this.notificationsDiv">
+            <ul id="this.notifications">
+                
+            </ul>
+        </div>
+        <div id="addItem">
+            <button class="addFoodButton" id="">&#10095; Add a food item</button>
+            <form method="post" action="" id="addItemForm" class="hide">
+                <label for="foodName" class="side">Food item:</label>
+                <input type="text" name="foodName" id="foodName" class="input side">
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity" min="1" max="10">
+                <input type="submit" value="Get Info">
+            </form>
+        </div>
+        <div id="nutriFormDiv">
+
+        </div>
+        <div id="dailyTotals">
+
+        </div>
+        <div id="this.dailyFoods">
+
+        </div>
+
+    </main>
+    
+    <script src="./js/main.js" type="module"  ></script>
+</body>
+</html>
