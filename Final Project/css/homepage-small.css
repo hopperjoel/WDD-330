@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Heebo&display=swap');
+
+/*------FONTS-----*/
+
+h1, h2, h3 {
+    font-family: 'Heebo', sans-serif;
+}
+
+p, li, button, input, label {
+    font-family: 'Arimo', sans-serif;
+}
+
+/*-------HEADER-----*/
+
+/*-------MAIN-----*/
+main {
+    margin: auto;
+    padding: 10px;
+}
+input {
+    background-color: rgb(112, 128, 144, 0.1);
+    border: 3px solid rgb(97, 131, 151, 0.3);
+    border-radius: 3px;
+    max-width: 300px;
+    height: 24px;
+}
+input:hover {
+    background-color: rgb(112, 128, 144, 0.3);
+}
+.toggleButtons{
+   background-color: transparent;
+   border: none;
+   font-size: larger;
+}
+.toggleDiv {
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #F19A3E;
+    border: 2px solid silver;
+    border-radius: 3px; 
+}
+.toggleDiv:hover {
+    transform: scale(1.01);
+    background-color: #e9b072;
+    color: black;
+}
+.addItemForm .side{
+    display: flex;
+    flex-direction: row;
+}
+.addItemForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.addItemForm input {
+    margin-bottom: 10px;
+}
+
+#submitInfo {
+    font-size: medium;
+    color: white;
+    background-color: #F19A3E;
+    border: 2px solid silver;
+    border-radius: 3px;  
+}
+#submitInfo:hover {
+    transform: scale(1.01);
+    background-color: #e9b072;
+    color: black;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+}
+.foodForm, #searchItemForm {
+    max-width: 300px;
+    background-color: rgba(200, 137, 66, 0.1);
+    border: 3px solid silver;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.foodForm input {
+    margin-bottom: 10px;
+    
+}
+.foodForm #submit {
+    font-size: medium;
+    color: white;
+    background-color: #F19A3E;
+    border: 2px solid silver;
+    border-radius: 3px; 
+}
+.foodForm #submit:hover {
+    transform: scale(1.01);
+    background-color: #e9b072;
+    color: black;
+}
+.hide {
+    display: none;
+}
+#submit {
+    padding: 0px 20px;
+    
+}
+
+/*------DISPLAY TABLES------*/
+
+#dailyTotals {
+    background-color: rgb(86, 113, 124, 0.3);
+    border: 3px solid rgb(241, 154, 62, 0.7);
+    padding: 5px;
+    margin: 10px;
+    max-width: 300px;
+}
+#dailyTotals ul {
+    list-style: none;
+    margin-left: 0px;
+}
+#dailyTotals ul li {
+    margin: 2px;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+    max-width: 200px;
+    font-size: medium;
+}
+
+#dailyFoods {
+    background-color: rgb(86, 113, 124, 0.3);
+    border: 3px solid rgb(241, 154, 62, 0.7);
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#dailyFoods ul {
+    list-style: none;
+}
+#dailyFoods ul li:nth-child(1) {
+    border-bottom: 2px solid black;
+    font-size:larger;
+}
+#notificationsDiv {
+    background-color: rgb(86, 113, 124, 0.3);
+    border: 3px solid rgb(241, 154, 62, 0.7);
+    padding: 5px;
+    margin: 10px;
+    max-width: 300px;
+}
+#notifications {
+    list-style:square;
+}
+
+/*-------FOOTER------*/
+
+footer {
+    background-color: #46ACC2;
+    border: 3px solid rgb(241, 154, 62, 0.7);
+    border-radius: 3px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
