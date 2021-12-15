@@ -10,10 +10,25 @@ p, li, a, button {
 
 /*----MAIN---*/
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .main-image img{
     max-width: 100%;
+    border-radius: 10px;
 }
 .main-image {
-    width: 300px;
-    border-radius: 5px;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+#videoDiv {
+    max-width: 600px;
+    max-height: 343px;
+}
+#videoDiv iframe {
+    width: 100%;
 }
