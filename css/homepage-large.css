@@ -1,0 +1,9 @@
+.main-image {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+#videoDiv {
+    max-width: 1000px;
+    max-height: 572px;
+}
